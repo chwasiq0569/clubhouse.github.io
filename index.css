@@ -15,7 +15,7 @@ li {
 .homePage__Wrapper {
   width: 100%;
   height: 100vh;
-  background-color: #fcfafa;
+  background-color: #ffffff;
 }
 .navbar__Container {
   width: 100%;
@@ -56,8 +56,11 @@ li {
   justify-content: flex-end;
 }
 .navbar__Container li {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
+}
+.navbar__Container li:nth-child(2) {
+  margin-left: 1rem;
 }
 .heroSection__Wrapper {
   width: 100%;
