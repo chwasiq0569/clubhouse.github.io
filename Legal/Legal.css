@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+}
+body {
+  width: 100%;
+  height: 100%;
+  font-family: -apple-system, "Segoe UI", Helvetica, "Apple Color Emoji", Arial,
+    sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+}
+.legalPageWrapper {
+  width: 100%;
+  height: 100%;
+}
+.legalPageWrapper footer {
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+}
+.disclosureHead {
+  font-weight: 500;
+  letter-spacing: 1.5px;
+}
+.legalPageWrapper footer .footerParagraph p {
+  font-size: 16px;
+  line-height: 24px;
+  line-height: 1.5;
+  padding: 5px 2px 7px 2px;
+  color: #37352f;
+}
+.footerLinks {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+.legalPageWrapper footer .footerLinks .footerLink {
+  width: auto;
+}
+.legalPageWrapper footer .footerLinks .footerLink a {
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  color: #37352f;
+  opacity: 0.7;
+  transition: all 0.2s ease;
+}
+.legalPageWrapper footer .footerLinks .footerLink a:hover {
+  opacity: 1;
+}
+.legalPageWrapper footer .footerLinks .footerLink:nth-child(2) {
+  margin: 0.5rem 0px;
+}

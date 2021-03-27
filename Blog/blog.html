@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./blog.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Clubhouse</title>
+</head>
+
+<body>
+    <div class="blogPage__Wrapper">
+        <div class="navbar__Container">
+            <div class="logo">
+                Community Guidelines
+            </div>
+            <div class="navItems__Container">
+                <a class="navItem" href="#">
+                    <div class="linkWrapper">
+                        <div class="imgContainer">
+                            <svg viewBox="0 0 17 17" class="searchNew"
+                                style="width: 14px; height: 14px; display: block; fill: inherit; flex-shrink: 0; backface-visibility: hidden; margin-right: 6px;">
+                                <path
+                                    d="M6.78027 13.6729C8.24805 13.6729 9.60156 13.1982 10.709 12.4072L14.875 16.5732C15.0684 16.7666 15.3232 16.8633 15.5957 16.8633C16.167 16.8633 16.5713 16.4238 16.5713 15.8613C16.5713 15.5977 16.4834 15.3516 16.29 15.1582L12.1504 11.0098C13.0205 9.86719 13.5391 8.45215 13.5391 6.91406C13.5391 3.19629 10.498 0.155273 6.78027 0.155273C3.0625 0.155273 0.0214844 3.19629 0.0214844 6.91406C0.0214844 10.6318 3.0625 13.6729 6.78027 13.6729ZM6.78027 12.2139C3.87988 12.2139 1.48047 9.81445 1.48047 6.91406C1.48047 4.01367 3.87988 1.61426 6.78027 1.61426C9.68066 1.61426 12.0801 4.01367 12.0801 6.91406C12.0801 9.81445 9.68066 12.2139 6.78027 12.2139Z">
+                                </path>
+                            </svg>
+                        </div>
+                        <span>Search</span>
+                    </div>
+                </a>
+                <a class="middleItem navItem" href="#">
+                    <div class="linkWrapper">
+                        Duplicate
+                    </div>
+                </a>
+                <span class="seperator">|</span>
+                <a class="navItem" href="#">
+                    <div class="linkWrapper">
+                        <div class="imgContainer">
+                            <svg viewBox="0 0 120 126" class="notionLogo"
+                                style="width: 18px; height: 18px; display: block; fill: inherit; flex-shrink: 0; backface-visibility: hidden; margin-right: 6px;">
+                                <path
+                                    d="M 20.6927 21.9315C 24.5836 25.0924 26.0432 24.8512 33.3492 24.3638L 102.228 20.2279C 103.689 20.2279 102.474 18.7705 101.987 18.5283L 90.5477 10.2586C 88.3558 8.55699 85.4356 6.60818 79.8387 7.09563L 13.1433 11.9602C 10.711 12.2014 10.2251 13.4175 11.1939 14.3924L 20.6927 21.9315ZM 24.8281 37.9835L 24.8281 110.456C 24.8281 114.351 26.7745 115.808 31.1553 115.567L 106.853 111.187C 111.236 110.946 111.724 108.267 111.724 105.103L 111.724 33.1169C 111.724 29.958 110.509 28.2544 107.826 28.4976L 28.721 33.1169C 25.8018 33.3622 24.8281 34.8225 24.8281 37.9835ZM 99.5567 41.8711C 100.042 44.0622 99.5567 46.2512 97.3618 46.4974L 93.7143 47.2241L 93.7143 100.728C 90.5477 102.43 87.6275 103.403 85.1942 103.403C 81.2983 103.403 80.3226 102.186 77.4044 98.54L 53.5471 61.087L 53.5471 97.3239L 61.0964 99.0275C 61.0964 99.0275 61.0964 103.403 55.0057 103.403L 38.2148 104.377C 37.727 103.403 38.2148 100.973 39.9179 100.486L 44.2996 99.2717L 44.2996 51.36L 38.2158 50.8725C 37.728 48.6815 38.9431 45.5225 42.3532 45.2773L 60.3661 44.0631L 85.1942 82.0036L 85.1942 48.4402L 78.864 47.7136C 78.3781 45.0351 80.3226 43.0902 82.7569 42.849L 99.5567 41.8711ZM 7.5434 5.39404L 76.9175 0.285276C 85.4366 -0.445402 87.6285 0.0440428 92.983 3.93368L 115.128 19.4982C 118.782 22.1747 120 22.9034 120 25.8211L 120 111.187C 120 116.537 118.051 119.701 111.237 120.185L 30.6734 125.05C 25.5584 125.294 23.124 124.565 20.4453 121.158L 4.13735 99.9994C 1.21516 96.1048 0 93.191 0 89.7819L 0 13.903C 0 9.5279 1.94945 5.8785 7.5434 5.39404Z">
+                                </path>
+                            </svg>
+                        </div>
+                        Notion
+                    </div>
+                </a>
+                <div id="mobileMenuBtn" class="mobileMenuIcon">
+                    <img src="../assets/images/menuIcon.png" alt="menu Icon" />
+                </div>
+            </div>
+        </div>
+        <div class="screenWrapper">
+
+        </div>
+        <div class="mobileMenu">
+            <ul class="menuItems">
+                <li class="mobile_menuItem">
+                    <div class="iconContainer">
+                        <img src="../assets/images/login.png" alt="loginIcon" />
+                    </div>
+                    <a href="#">
+                        Sign in
+                    </a>
+                </li>
+                <li class="mobile_menuItem">
+                    <a href="#">
+                        Get early access
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!--main Section  -->
+        <div class="mainSection__Wrapper">
+            <div class="content">
+                <h1 class="mainHead">Community Guidelines</h1>
+                <div class="emptySpace"></div>
+                <p class="date">Last Updated Mar 5, 2021</p>
+                <div class="emptySpace"></div>
+                <p class="secondaryText">Hi there! 👋🏽 Clubhouse is currently in early beta and we’re learning
+                    a lot
+                    each day. As we open up to a broader audience, we expect this document to evolve. If you have any
+                    feedback or suggestions, we’d love to hear from you.</p>
+                <div class="emptySpace"></div>
+                <p class="primaryText">These Community Guidelines are meant to help you better understand:</p>
+                <ul>
+                    <li>The principles that we think make Clubhouse a special place</li>
+                    <li>The primary roles that users play in Clubhouse</li>
+                    <li>The rules we expect you to abide by as a Clubhouse user</li>
+                    <li>What you can do if you come across inappropriate behavior</li>
+                </ul>
+                <div class="emptySpace"></div>
+                <h3 class="primaryHeading">Principles</h3>
+                <p class="secondaryText underlined">Clubhouse was designed to be a space for authentic conversation and
+                    expression—where people can have fun, learn, make meaningful connections, and share rich experiences
+                    with others around the world. Below are a few guiding principles that we believe are important.</p>
+                <ul class="underlined">
+                    <li><span>Be yourself.</span> The authenticity of Clubhouse begins with the people.</li>
+                    <li><span>Be respectful.</span> This applies to every person, at all times.</li>
+                    <li><span>Be inclusive.</span> Tolerate, welcome, and consider diverse people and perspectives.</li>
+                    <li><span>Build empathy and understanding.</span> Engage in debates that are in good faith.</li>
+                    <li><span>Foster meaningful and genuine connections.</span> This is what Clubhouse is all about.
+                    </li>
+                </ul>
+                <p class="secondaryText">Please note that these principles are intended to be high-level guidelines
+                    only. If you’re interested in knowing what can get people kicked off Clubhouse, please see the Rules
+                    sections below. 🙂</p>
+                <div class="emptySpace"></div>
+                <h3 class="primaryHeading">Roles</h3>
+                <p class="secondaryText underlined">Conversations in Clubhouse take place in <span>rooms</span>. Within
+                    each room,
+                    you can
+                    be a <span>moderator</span>, a <span>speaker</span>, or a <span>listener</span>. Below are some of
+                    the best
+                    practices
+                    for
+                    each role.</p>
+                <h3 class="secondaryHeading">Moderator</h3>
+                <p class="secondaryText">When you start a room in Clubhouse, you are the moderator. This
+                    means you are a speaker with the special power to add or remove other speakers. As a moderator, you
+                    guide the conversation and have a strong influence on the content and style of conversation in the
+                    room.</p>
+                <p class="secondaryText">In Clubhouse, the best moderators tend to:</p>
+                <ul class="underlined">
+                    <li><span>Thoughtfully curate the speaker group:</span> Great moderators are thoughtful about who
+                        they invite to
+                        speak, and try to include diverse people, personalities, and perspectives. A moderator can
+                        decide to run a "party room" with a lot of speakers, or a fireside chat with just a couple. All
+                        types of rooms can work, and it’s up to each moderator to develop their own style.</li>
+                    <li><span>Actively manage the conversation:</span> Some speakers are comfortable talking at length,
+                        while others
+                        are more reserved. Moderators can be a positive, balancing force, asking the quieter speakers to
+                        share their perspectives and posing questions to the group.</li>
+                    <li><span>Consider the audience experience:</span> Listeners enjoy joining the stage to ask
+                        questions,
+                        participate in the discussion, or even offer feedback in real-time. Take their questions when
+                        appropriate, or feel free to focus on the current speakers—it’s totally up to you. When you do
+                        take questions, it’s okay to return a listener to the audience after the question is answered.
+                    </li>
+                </ul>
+                <h3 class="secondaryHeading">Speaker</h3>
+                <p class="secondaryText">Speakers are the people in a room who have the ability to talk. By default,
+                    the person who starts the room is a speaker, and so is the first person to join them on stage.
+                    Everyone else joins in the audience as a listener, and must be invited up if they wish to speak.
+                    Successful speakers tend to:</p>
+                <ul class="underlined">
+                    <li><span>Share the stage:</span> Few conversations in Clubhouse look like a one-on-one interview.
+                        Most begin
+                        with one speaker and expand to three, five, or, even dozens of speakers. "Sharing the stage"
+                        and taking turns speaking expands the breadth and depth of conversation and brings in diverse
+                        voices.</li>
+                    <li><span>Know when to mute (and unmute):</span> When you’re not actively speaking it’s generally
+                        good to
+                        tap
+                        the mute button in the lower right to minimize background noise. But strategically unmuting is
+                        just as important! This means going off mute for a few seconds to laugh, acknowledge what the
+                        speaker said, signal that you want to speak next, or just be more present in "hangout" style
+                        conversations.</li>
+                    <li><span>Bow out anytime:</span> Feel free to leave the speaker section anytime without feeling
+                        judged,
+                        either
+                        by going back to the audience or exiting the room using the "Leave quietly" button.
+                    </li>
+                </ul>
+                <h3 class="secondaryHeading">Listener</h3>
+                <p class="secondaryText">When you tap to join an existing conversation, you enter in the audience on
+                    mute. This means
+                    you are a listener!</p>
+                <p class="secondaryText">As a listener on Clubhouse, you should relax and enjoy the conversation. In
+                    other words:</p>
+                <ul class="">
+                    <li><span>Don’t feel pressure to speak:</span> Feel free to remain a listener even if you're invited
+                        to
+                        speak;
+                        there is no
+                        obligation to accept.</li>
+                    <li><span>Raise your hand to chime in:</span> If you want to join the conversation, just raise your
+                        hand by
+                        tapping the
+                        button in the lower right to let the moderator know that you’d like to be added as a speaker. If
+                        they don’t
+                        accept right away, don’t be offended. They may get lots of requests and can’t always get to all
+                        of them.</li>
+                    <li><span>Discover new people:</span> While you’re listening, tap around and learn more about the
+                        people in
+                        the
+                        room. It’s
+                        a good way to find new people to follow. 🙂
+                    </li>
+                    <li><span>Feel free to browse other rooms:</span> While present in a room, feel free to explore the
+                        list of
+                        other
+                        active
+                        rooms to see what strikes you as interesting.
+                    </li>
+                    <li><span>Enjoy multitasking.</span> Don’t worry about splitting your attention between Clubhouse
+                        and work,
+                        hobbies,
+                        chores, or an evening walk. People are often doing other things while they Clubhouse!
+                    </li>
+                    <li><span>Pull your friends aside to chat:</span> See a friend in the audience you want to catch up
+                        with?
+                        Tap on
+                        their
+                        profile and ask them to start a new room together.
+                    </li>
+                    <li><span>Come and go at will:</span> On Clubhouse, 👻 ghosting isn’t a bad thing! You can drop in
+                        and out of
+                        rooms as you
+                        please without worrying about offending anyone. You won’t set off any alerts when you go.
+                    </li>
+                </ul>
+                <div class="emptySpace"></div>
+                <h3 class="primaryHeading">Rules</h3>
+                <div class="emptySpace"></div>
+                <p class="secondaryText"><span>When you use Clubhouse, you agree to abide by the following rules at all
+                        times.</span>
+                    You also
+                    agree not to encourage others to violate these rules. The latter is taken seriously and can also
+                    result in removal
+                    from the Service.</p>
+                <p class="secondaryText underlined">Toggle to show or hide details for each.</p>
+                <!-- accordian starts-->
+                <ul class="accordianList">
+                    <li class="noBullets">
+                        <div class="accordionContainter">
+                            <div class="svgContainer accordion">
+                                <svg viewBox="0 0 100 100" class="triangle"
+                                    style="width: 0.6875em; height: 0.6875em; display: block; fill: inherit; flex-shrink: 0; backface-visibility: hidden; transition: transform 200ms ease-out 0s; transform: rotateZ(90deg); opacity: 1;">
+                                    <polygon points="5.9,88.2 50,11.8 94.1,88.2 "></polygon>
+                                </svg>
+                            </div>
+                            <p>You must use a real name and identity on the service.</p>
+                        </div>
+
+                        <ul class="panel">
+                            <li class="">
+                                We may require users to use the name they use in real life so other users know who they
+                                are connecting with. If we receive a complaint about a potential fake name, we may
+                                require users to provide identity verification.
+                            </li>
+                            <li class="">
+                                We prohibit any attempt to impersonate any person or entity, or falsely state or
+                                otherwise misrepresent your affiliation with a person or entity.
+                            </li>
+                            <li class="">
+                                While brands are welcome to create clubs and host conversations on Clubhouse, user
+                                accounts must represent individual people, rather than brands, brand mascots, or other
+                                non-person entities.
+                            </li>
+                            <li class="">
+                                We prohibit the creation of duplicate or multiple accounts by one individual, whether
+                                representing themselves or another entity.
+                            </li>
+                            <li class="">
+                                We prohibit unauthorized promotion of your account in ways that could be confusing for
+                                other users. This includes adding fake "verified account" check marks, fake speaking
+                                indicators or fake moderators badges to your profile photo.
+                            </li>
+                            <li class="">
+                                We prohibit "username squatting," (e.g., intentional registration of "branded" usernames
+                                or acting with a bad faith intent, e.g., to sell the handle to another party).
+                            </li>
+                            <li class="">
+                                We may allow for parody, commentary, or fan accounts on a case-by-case basis.
+                            </li>
+                        </ul>
+                    </li>
+                    <!--  -->
+                    <li class="noBullets">
+                        <div class="accordionContainter">
+                            <div class="svgContainer accordion">
+                                <svg viewBox="0 0 100 100" class="triangle"
+                                    style="width: 0.6875em; height: 0.6875em; display: block; fill: inherit; flex-shrink: 0; backface-visibility: hidden; transition: transform 200ms ease-out 0s; transform: rotateZ(90deg); opacity: 1;">
+                                    <polygon points="5.9,88.2 50,11.8 94.1,88.2 "></polygon>
+                                </svg>
+                            </div>
+                            <p>You must be at least 18 years of age to use Clubhouse (or older if required by your
+                                country). </p>
+                        </div>
+
+                        <ul class="panel">
+                            <li class="">
+                                If you are under 18 years old and are a user of the Service, you are in violation of our
+                                Community Guidelines and Terms of Service.
+                            </li>
+                        </ul>
+                    </li>
+                    <!--  -->
+                    <li class="noBullets">
+                        <div class="accordionContainter">
+                            <div class="svgContainer accordion">
+                                <svg viewBox="0 0 100 100" class="triangle"
+                                    style="width: 0.6875em; height: 0.6875em; display: block; fill: inherit; flex-shrink: 0; backface-visibility: hidden; transition: transform 200ms ease-out 0s; transform: rotateZ(90deg); opacity: 1;">
+                                    <polygon points="5.9,88.2 50,11.8 94.1,88.2 "></polygon>
+                                </svg>
+                            </div>
+                            <p>You may not engage in abuse, bullying, or harassment of any person or groups of people.
+                            </p>
+                        </div>
+
+                        <ul class="panel">
+                            <li class="">
+                                <em>Abuse</em> is any attempt to bully, harass, or intimidate someone. <em>Bullying</em>
+                                is
+                                offensive,
+                                intimidating, insulting, or malicious behavior, or an abuse or misuse of power intended
+                                to undermine, humiliate, or injure the victim. <em>Harassment</em> is unwanted,
+                                unwelcomed,
+                                and
+                                uninvited behavior that is demeaning, threatening, or offensive and results in a hostile
+                                environment.
+                            </li>
+                            <li class="">
+                                This applies to all types of content on the service—including things said in
+                                conversations, things displayed in profile photos, and things written on profiles, in
+                                room titles (e.g., mentioning another user by name or direct reference in a room title,
+                                outside the context of a welcome room), in event titles and descriptions, and in club
+                                names and descriptions.
+                                <ul>
+                                    <li>
+                                        Please note that, while we allow for creative expression including comedy and
+                                        parody, we do not tolerate their use for participating in or propagating abuse,
+                                        bullying, or harassment.
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--  -->
+                    <li class="noBullets">
+                        <div class="accordionContainter">
+                            <div class="svgContainer accordion">
+
+                                <svg viewBox="0 0 100 100" class="triangle"
+                                    style="width: 0.6875em; height: 0.6875em; display: block; fill: inherit; flex-shrink: 0; backface-visibility: hidden; transition: transform 200ms ease-out 0s; transform: rotateZ(90deg); opacity: 1;">
+                                    <polygon points="5.9,88.2 50,11.8 94.1,88.2 "></polygon>
+                                </svg>
+                            </div>
+                            <p>You may not discriminate against, engage in hateful conduct directed at, or threaten
+                                violence or harm against any person or groups of people.
+                            </p>
+                        </div>
+
+                        <ul class="panel">
+                            <li class="">
+                                <em>Discrimination</em> is the unfair treatment of any individual or a group of
+                                individuals as a
+                                result of, but not limited to, race, color, religion, national origin, age, sex, gender
+                                identity, sexual orientation, marital status, disability, genetic information, or any
+                                status protected by law.
+                            </li>
+                            <li class="">
+                                <em>Hateful</em> conduct includes violence and attacks directed at individuals or groups
+                                of
+                                individuals on the basis of the characteristics defined above. We prohibit the existence
+                                of accounts or use of accounts whose purpose is to promote hateful conduct, whether via
+                                imagery, text, or speech.
+                            </li>
+                            <li class="">
+                                We prohibit threats of violence or harm against any individual or group of individuals,
+                                and attempts to glorify violence in any form of media or communication.
+                            </li>
+                            <li class="">
+                                We prohibit all forms of terrorism or violent extremism, and the existence of accounts
+                                or use of accounts for the purpose of furthering violent or extremist ideologies or
+                                activities.
+                            </li>
+                            <li class="">
+                                We prohibit all organizations that engage in or proclaim violence to have a presence on
+                                Clubhouse. This includes, but is not limited to, terrorism, hate, and organized violence
+                                or criminal activity. We further prohibit all content that represents or promotes these
+                                organizations.
+                            </li>
+                            <li class="">
+                                This applies to all types of content on the service—including things said in
+                                conversations, things displayed in profile photos, and things written on profiles, in
+                                room titles, in event titles and descriptions, and in club names and descriptions.
+                                <ul>
+                                    <li>
+                                        While we allow for comedy, parody, and the discussion of controversial topics
+                                        (e.g., conspiracy theories), we do not tolerate their use for participating in
+                                        or propagating discrimination, hate, or harm towards any group.
+                                    </li>
+                                    <li>
+                                        Public rooms in Clubhouse are intended to be open to all, and while moderators
+                                        reserve the right to mute or remove any user from the room, doing so solely and
+                                        explicitly on the basis of race, gender, or any protected class is prohibited.
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--  -->
+                    <li class="noBullets">
+                        <div class="accordionContainter">
+                            <div class="svgContainer accordion">
+                                <svg viewBox="0 0 100 100" class="triangle"
+                                    style="width: 0.6875em; height: 0.6875em; display: block; fill: inherit; flex-shrink: 0; backface-visibility: hidden; transition: transform 200ms ease-out 0s; transform: rotateZ(90deg); opacity: 1;">
+                                    <polygon points="5.9,88.2 50,11.8 94.1,88.2 "></polygon>
+                                </svg>
+                            </div>
+                            <p>You may not share, threaten to share, or incentivize the sharing of other people's
+                                private information without their prior permission.
+                            </p>
+                        </div>
+
+                        <ul class="panel">
+                            <li class="">
+                                The sharing of a person's private information online without their consent is
+                                sometimes referred to as "doxxing" and is not allowed.
+                            </li>
+                            <li class="">
+                                In determining the severity of a violation, we examine the type of information being
+                                shared, whether that information is private or public and has already been shared
+                                elsewhere online, the person sharing it, and the intent of the action.
+                            </li>
+                        </ul>
+                    </li>
+                    <!--  -->
+                    <li class="noBullets">
+                        <div class="accordionContainter">
+                            <div class="svgContainer accordion">
+                                <svg viewBox="0 0 100 100" class="triangle"
+                                    style="width: 0.6875em; height: 0.6875em; display: block; fill: inherit; flex-shrink: 0; backface-visibility: hidden; transition: transform 200ms ease-out 0s; transform: rotateZ(90deg); opacity: 1;">
+                                    <polygon points="5.9,88.2 50,11.8 94.1,88.2 "></polygon>
+                                </svg>
+                            </div>
+                            <p>You may not engage in intentionally disruptive activity that negatively affects the
+                                experience of other users.
+                            </p>
+                        </div>
+
+                        <ul class="panel">
+                            <li class="">
+                                Intentionally disruptive activity, includes, but is not limited to, making unrelated,
+                                off-topic comments that may include profane, vulgar, abusive or hateful statements,
+                                loud noises, and room takeovers or ending of rooms. This type activity may also be
+                                known as trolling.
+                            </li>
+                            <li class="">
+                                We have a zero tolerance policy for this activity; accounts in violation may be
+                                permanently suspended.
+                            </li>
+                        </ul>
+                    </li>
+                    <!--  -->
+                    <li class="noBullets">
+                        <div class="accordionContainter">
+                            <div class="svgContainer accordion">
+                                <svg viewBox="0 0 100 100" class="triangle"
+                                    style="width: 0.6875em; height: 0.6875em; display: block; fill: inherit; flex-shrink: 0; backface-visibility: hidden; transition: transform 200ms ease-out 0s; transform: rotateZ(90deg); opacity: 1;">
+                                    <polygon points="5.9,88.2 50,11.8 94.1,88.2 "></polygon>
+                                </svg>
+                            </div>
+                            <p>You may not transcribe, record, or otherwise reproduce and/or share information obtained
+                                in Clubhouse without prior permission.
+                            </p>
+                        </div>
+
+                        <ul class="panel">
+                            <li class="">
+                                We prohibit the transcribing, recording, or otherwise reproducing, manipulating, and /
+                                or sharing of information (e.g., audio or screen recording) obtained in Clubhouse,
+                                without the express authorization / permission of Clubhouse and all users that
+                                originated this content.
+                            </li>
+                            <li class="">
+                                While screenshots (images only) are not explicitly against our TOS, we reserve the
+                                right to limit or suspend any user account that utilizes them in a way that violates
+                                our Terms of Service (e.g., directed abuse or hate towards a user).
+                            </li>
+                        </ul>
+                    </li>
+                    <!--  -->
+                    <li class="noBullets">
+                        <div class="accordionContainter">
+                            <div class="svgContainer accordion">
+                                <svg viewBox="0 0 100 100" class="triangle"
+                                    style="width: 0.6875em; height: 0.6875em; display: block; fill: inherit; flex-shrink: 0; backface-visibility: hidden; transition: transform 200ms ease-out 0s; transform: rotateZ(90deg); opacity: 1;">
+                                    <polygon points="5.9,88.2 50,11.8 94.1,88.2 "></polygon>
+                                </svg>
+                            </div>
+                            <p>You may not engage in any conversations or upload any content that violates any
+                                intellectual property or other proprietary rights.
+                            </p>
+                        </div>
+
+                        <ul class="panel">
+                            <li class="">
+                                You must adhere to all property, copyright, and trademark laws.
+                            </li>
+                            <li class="">
+                                We reserve the right to suspend or remove accounts that may be in violation.
+                            </li>
+                            <li class="">
+                                All original content that a user shares in Clubhouse is owned by that user alone.
+                            </li>
+                        </ul>
+                    </li>
+                    <!--  -->
+                    <li class="noBullets">
+                        <div class="accordionContainter">
+                            <div class="svgContainer accordion">
+                                <svg viewBox="0 0 100 100" class="triangle"
+                                    style="width: 0.6875em; height: 0.6875em; display: block; fill: inherit; flex-shrink: 0; backface-visibility: hidden; transition: transform 200ms ease-out 0s; transform: rotateZ(90deg); opacity: 1;">
+                                    <polygon points="5.9,88.2 50,11.8 94.1,88.2 "></polygon>
+                                </svg>
+                            </div>
+                            <p>You may not spread false information or spam, or artificially amplify or suppress
+                                information.
+                            </p>
+                        </div>
+
+                        <ul class="panel">
+                            <li class="">
+                                We prohibit the spread of or attempts to spread false information or news.
+                            </li>
+                            <li class="">
+                                Fake incident report submissions or intentional, false reports of a Rule violation are
+                                a violation of this Rule.
+                            </li>
+                            <li class="">
+                                We prohibit the artificial amplification or suppression of information and any attempts
+                                to manipulate the platform to enable this.
+                            </li>
+                            <li class="">
+                                We prohibit the propagation of "spam," which is generally irrelevant or unsolicited
+                                messages shared to other users. Spam can include but is not limited to sending unwanted
+                                or inappropriate app invites, sending repeated requests to join rooms or clubs, and
+                                adding users as event hosts or guests without their permission..
+                            </li>
+                        </ul>
+                    </li>
+                    <!--  -->
+                    <li style="padding-bottom: 0.75rem;" class="noBullets underlined">
+                        <div class="accordionContainter">
+                            <div class="svgContainer accordion">
+                                <svg viewBox="0 0 100 100" class="triangle"
+                                    style="width: 0.6875em; height: 0.6875em; display: block; fill: inherit; flex-shrink: 0; backface-visibility: hidden; transition: transform 200ms ease-out 0s; transform: rotateZ(90deg); opacity: 1;">
+                                    <polygon points="5.9,88.2 50,11.8 94.1,88.2 "></polygon>
+                                </svg>
+                            </div>
+                            <p>You may not use the service for the purpose of conducting any unauthorized or illegal
+                                activities.
+                            </p>
+                        </div>
+
+                        <ul class="panel">
+                            <li class="">
+                                We prohibit the use of our service for the purpose of conducting illegal activities,
+                                including but not limited to the promotion or sale of illegal goods and services.
+                            </li>
+                            <li class="">
+                                We prohibit unauthorized promotion of your account in ways that could be confusing for
+                                other users. This includes adding fake "verified account" check marks, fake speaking
+                                indicators or fake moderators badges to your profile photo.
+                            </li>
+                            <li class="">
+                                We prohibit the use of our service, directly or indirectly, for the solicitation, sale,
+                                or purchase of any goods or services not specifically authorized, including but not
+                                limited to the sale or solicitation of Clubhouse invites, accounts, follows or
+                                fraudulent engagement. We also prohibit investment and financial schemes, and content
+                                or services that are adult in nature.
+                            </li>
+                            <li class="">
+                                We prohibit the use of scam tactics to solicit money or private financial information.
+                            </li>
+                            <li class="">
+                                We prohibit the encouragement or promotion of acts of self-harm or suicide.
+                            </li>
+                            <li class="">
+                                We prohibit any solicitation of minors, as well as the sharing of suggestive, sexual,
+                                mature, graphic, abusive, or otherwise inappropriate content with them.
+                            </li>
+                            <li class="">
+                                We prohibit intentional threats to the Clubhouse platform.
+                            </li>
+                            <li class="">
+                                We prohibit intentional threats to the privacy or security of user accounts or to
+                                Clubhouse employees, staff, or partners.
+                                <ul>
+                                    <li>
+                                        This includes, but is not limited to, unwanted attempts to contact Clubhouse
+                                        employees, staff, or partners via personal channels including personal email
+                                        addresses, phone numbers, in person visits, or via other unauthorized or
+                                        invasive methods. Attempts to do so will constitute a Rule violation and may be
+                                        escalated to law enforcement.
+                                    </li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <!--  -->
+                    <p style="padding-top: 0.75rem;" class="secondaryText">If you witness a Rules violation, please
+                        follow the instructions
+                        below to report it.</p>
+                    <p class="secondaryText ">Follow these links for our <a href="#">Privacy Policy</a> and <a
+                            href="#">Terms of
+                            Service.</a></p>
+                    <p class="secondaryText ">And, if you have questions, feedback, or suggestions, please <a
+                            href="#">let us know!</a>
+                    </p>
+                </ul>
+                <!-- accordian ends-->
+
+
+                <div class="emptySpace"></div>
+                <h3 class="primaryHeading">Safety</h3>
+                <!-- <div class="emptySpace"></div> -->
+                <h3 class="secondaryHeading">Content Moderation</h3>
+                <p class="secondaryText underlined">If someone has not violated any of the Rules, but you would still
+                    prefer not
+                    to interact with them, here are some tools you can utilize.</p>
+                <p class="primaryText">Room moderators decide who is in a room and can speak:</p>
+                <ul class="">
+                    <li>Accept or reject speakers: If you are a room moderator you decide who can speak. If you’d like
+                        to invite someone from the audience to speak, just tap on the profile photo of that user and
+                        select “Invite to Speak.” If someone else requests to speak, you have the option to decline.
+                    </li>
+                    <li>Mute or remove speakers: Rooms moderators can also temporarily mute a speaker or move them back
+                        to the audience. To mute the speaker, tap on their profile photo to open the half-sheet, and
+                        then tap the mute button to the right of their profile photo. To move them down to the audience,
+                        tap on their profile photo to open the half-sheet, then tap “‘Move to Audience.”</li>
+                    <li>Remove from room: If someone is being disruptive or distressing to people in the room,
+                        moderators can remove them, and they will no longer see or be able to re-enter the room. To
+                        remove them from room, tap on their profile half-sheet, tap the ellipses and remove.
+                    </li>
+                    <p class="primaryText">Anyone can decide who they interact with:</p>
+                    <li><span>Unfollow: </span>You can unfollow a user at any time. To do so, navigate to the user’s
+                        profile
+                        and tap
+                        on the button that says “Following” to unselect it. They won’t be notified, and you won’t
+                        receive any further notifications about their activity.
+                    </li>
+                    <li><span>Block:</span> You can block a user at any time. On their profile, click on the 3 vertical
+                        dots in
+                        the
+                        top right, and select “Block.” 
+                        <ul class="">
+                            <li>Blocked users will not be able to see or join any room that you create or in which you
+                                are a moderator or speaker.
+                            </li>
+                            <li>If a blocked user is speaking in a room that would otherwise be visible to you, that
+                                room will be hidden from your feed by default, but there will be a capsule at the bottom
+                                of your feed to let you know that the hidden room exists. If you would like to see the
+                                room regardless, you can choose to tap that capsule and reveal the room.
+                            </li>
+                            <li>Blocked users will not be able to see or join any room that you create or in which you
+                                are a moderator or speaker.
+                            </li>
+                        </ul>
+                    </li>
+                    <li><span>Shared block lists:</span> If there is someone who many people in your network have
+                        blocked,
+                        there will be a "!" icon on that person’s user profile to make you aware. This is personalized
+                        to you, and is intended to help you make decisions about when to follow someone or bring them
+                        up on stage.
+                    </li>
+
+                </ul>
+                <h3 class="secondaryHeading">Incident Reporting</h3>
+                <p class="secondaryText underlined">We depend on the vigilance of each user and the community to report
+                    violations of Rules. If you believe a user has violated a Rule, you can report a Trust & Safety
+                    incident. Note: Inappropriate use of the incident reporting system or intentional, false reports are
+                    against our rules and are taken seriously.</p>
+                <p class="secondaryText underlined"><span>Temporary audio recording:</span> Solely for the purpose of
+                    supporting
+                    incident investigations, we temporarily record the audio in a room while the room is live. If a user
+                    reports a Trust and Safety violation while the room is active, we retain the audio for the purposes
+                    of investigating the incident, and then delete it when the investigation is complete. If no incident
+                    is reported in a room, we delete the temporary audio recording when the room ends. Audio from (i)
+                    muted speakers and (ii) audience members is never captured, and all temporary audio recordings are
+                    encrypted.</p>
+                <p class="primaryText">You can report an incident in 2 ways:</p>
+                <ul class="underlined">
+                    <li><span>Report an incident in real time:</span> From inside a room, tap on the user you want to
+                        report. A
+                        profile "half-sheet" will pop up; tap the three horizontal dots at the top right, then tap
+                        “Report an incident." Submitting a report from inside the room prompts us to retain the
+                        temporary, encrypted audio recording for the purpose of investigating the incident, as noted
+                        above.</li>
+                    <li><span>Report a past incident:</span> To report an incident after the room has ended, you can go
+                        to
+                        the
+                        profile of the user you want to report, tap the three horizontal dots at the top right, then tap
+                        “Report an incident." Note that when you report an incident directly from a user's profile, we
+                        will not have access to any room’s audio to support the investigation.</li>
+                </ul>
+                <p class="primaryText">Here’s what you should know about reporting another user for a Rule violation:
+                </p>
+                <ul class="underlined">
+                    <li>If you submit a report, we will not share your identity with the person you are reported.</li>
+                    <li>All reports that are submitted will be reviewed and investigated. The need for and type of
+                        corrective or disciplinary action needed will be determined on a case by case basis.</li>
+                    <li>We seek to be fair, consistent, and responsive in addressing all reported incidents.</li>
+                    <li>If the violation directly targeted you, we may share certain information about the process and
+                        resolution with you (e.g., the stage of investigation, any concerns that you may be at risk for
+                        immediate harm, information on how the resolution could impact you).</li>
+                    <li>Intentional, false reports of violations are treated as a violation of the Rules.</li>
+                </ul>
+                <p class="primaryText">If another user has reported you for violating a Rule, here’s what you should
+                    know:
+                </p>
+                <ul class="underlined">
+                    <li>If a report has been filed against you, we may contact you through your Clubhouse account with
+                        information about the nature of the report. We may keep some details private in order to protect
+                        the reporting user(s). If we are unable to reach you, we may restrict your account access
+                        temporarily until we are able to do so.</li>
+                    <li>We will notify you of the result of the investigation and its potential impact to you.</li>
+                    <li>We seek to be fair, consistent, and responsive in addressing all reported incidents.</li>
+                    <li>If you believe a report has been falsely filed against you or you would like to appeal a
+                        decision, please contact us, including as much context as possible.</li>
+                    <li>Any attempt to retaliate against users who participate in reporting or investigation is a
+                        violation.</li>
+                </ul>
+                <p class="primaryText">Any attempt to retaliate against users who participate in reporting or
+                    investigation is a violation.
+                </p>
+                <ul class="underlined">
+                    <li>If your account is flagged for a potential violation of our Rules, your account may be
+                        temporarily or permanently restricted or removed from the platform.</li>
+                    <li>We will notify you of the result of the investigation and its potential impact to you.</li>
+                    <li>If you believe your account did not violate our Rules, contact our Trust & Safety team at
+                        <a href="#">suspension@joinclubhouse.com</a>. Please include your Clubhouse username, verified
+                        email address,
+                        and reference to the original decision notification you received.</li>
+                    <li>Please keep the following in mind when submitting an appeal:
+                        <ul class="">
+                            <li>Decision appeals must originate from the user who received the notice.</li>
+                            <li>Decision appeals must originate from the user who received the notice.
+                            </li>
+                            <li>Submitting multiple appeals concurrently may result in a delay in review.</li>
+                        </ul>
+                    </li>
+                    <li>Once you submit the appeal, the Clubhouse Trust & Safety Team will decide whether or not to
+                        review it based on the Rule violation in question. Please note that not all Trust & Safety
+                        enforcement decisions are eligible for an appeal.</li>
+                </ul>
+                <p class="primaryText">These are examples of potential consequences for Rules violations
+                    (non-exhaustive):
+                </p>
+                <ul class="underlined">
+                    <li>Provide a warning for a first offense of low severity and impact</li>
+                    <li>Request the removal of or directly remove offending content</li>
+                    <li>Restrict the ability to participate in some or all conversations</li>
+                    <li>Temporarily or permanently disable or remove the account</li>
+                    <li>Restrict the ability to participate in some or all conversations</li>
+                </ul>
+                <p class="secondaryText">Consequences for confirmed violations may vary based on the type and severity
+                    of the violation, the impact to victim(s), the historical actions of the offending user, and the
+                    intent of the actions.</p>
+                <h3 class="primaryHeading">Legal note</h3>
+                <p class="secondaryText">Finally, please keep in mind this quick legal note on our Community Guidelines,
+                    violations, and
+                    how we may enforce them:</p>
+                <ul class="">
+                    <li>You are solely responsible for your interactions with other Clubhouse users and you agree that
+                        we will
+                        have no liability or responsibility with respect to those interactions.</li>
+                    <li>We understand that not all Clubhouse users will share our views as to what constitutes a
+                        violation of
+                        these Community Guidelines. However, to operate a functional platform, we must reserve the right
+                        to
+                        determine in our sole discretion what constitutes a violation.</li>
+                    <li>Our failure to enforce these Community Guidelines in each and every instance in which it might
+                        have
+                        application does not amount to a waiver of our rights under our Terms of Service or these
+                        Community
+                        Guidelines.</li>
+                    <li>We reserve the right, in our sole discretion, to change portions of these Community Guidelines
+                        at any
+                        time. If we do this, we will post the changes on this page and will indicate at the top of this
+                        page the
+                        date these terms were last updated.</li>
+                </ul>
+                <div class="emptySpace"></div>
+
+                <h3 class="primaryHeading">Contact</h3>
+                <p class="secondaryText">We take these Community Guidelines seriously and ask that you follow them in
+                    the spirit
+                    in which they are intended. We further recognize that these guidelines must continually evolve, so
+                    please do
+                    contact us with questions, suggestions, or comments <a href="#">here.</a></p>
+                <p class="secondaryText">Thank you for reading, and for helping us build an amazing community! 🙏🏽</p>
+                <p class="secondaryText">Team Clubhouse</p>
+            </div>
+            <!-- contentended -->
+        </div>
+        <!-- contentContaner ended -->
+    </div>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        let i;
+        var active = false;
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                if (active == false) {
+                    this.querySelector("svg").style.transform = "rotateZ(180deg)"
+                    active = true
+                    this.parentNode.parentNode.querySelector(".panel").style.display = "block"
+                } else {
+                    this.querySelector("svg").style.transform = "rotateZ(90deg)"
+                    active = false
+                    this.parentNode.parentNode.querySelector(".panel").style.display = "none"
+                }
+            });
+        }
+        document.getElementById("mobileMenuBtn").addEventListener("click", function () {
+            document.querySelector(".mobileMenu").style.bottom = "0%";
+            document.querySelector(".screenWrapper").style.display = "block";
+            window.setTimeout(function () {
+                document.querySelector(".screenWrapper").style.opacity = "0.6";
+                document.body.style.overflow = "hidden";
+            }, 100)
+            document.querySelector(".screenWrapper").addEventListener("click", function () {
+                document.querySelector(".mobileMenu").style.transition = "all 0.3s ease";
+                document.querySelector(".screenWrapper").style.transition = "all 0.3s ease";
+                document.querySelector(".mobileMenu").style.bottom = "-100px";
+                document.querySelector(".screenWrapper").style.opacity = "0";
+                window.setTimeout(function () {
+                    document.querySelector(".screenWrapper").style.display = "none";
+                    document.body.style.overflow = "auto";
+                }, 100)
+            });
+        })
+    </script>
+
+</body>
+
+</html>
