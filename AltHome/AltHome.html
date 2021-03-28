@@ -23,14 +23,18 @@
                 <!-- <span>Clubhouse</span> -->
             </div>
             <ul class="navItems__Container">
-                <li class="navItem">
+                <!-- <li class="navItem">
                     Sign In
                 </li>
                 <li class="navItem">
                     Get early access
-                </li>
-                <li id="mobileMenuBtn" class="navItem mobileMenuIcon">
-                    <img src="../assets/images/menuIcon.png" alt="menu Icon" />
+                </li> -->
+                <li id="mobileMenuBtn" class="mobileMenuIcon">
+                    <div class="imgContainer">
+                        <img src="../assets/images/two-lines.png" alt="menu Icon" />
+                    </div>
+
+                    <p>MENU</p>
                 </li>
             </ul>
         </div>
@@ -57,15 +61,16 @@
         <div class="heroSection__Wrapper">
             <div class="hero">
                 <div class="upper">
-                    <p class="secondaryHead">RESERVE YOUR CARD</p>
+                    <p class="secondaryHead">We’re currently in private beta
+                    </p>
                     <!-- <div class="mainWavingHand">
                         <img src="../assets/images/logoWave.png" alt="wave_emoji" />
                     </div> -->
                     <div class="mainHead">
-                        <span>Invest in your future
+                        <span>Put your money to work
 
                         </span>
-                        <span>while your cash stays safe
+                        <span>without all the work
 
                         </span></div>
                 </div>
@@ -223,6 +228,7 @@
         document.getElementById("mobileMenuBtn").addEventListener("click", function () {
             document.querySelector(".mobileMenu").style.bottom = "0%";
             document.querySelector(".screenWrapper").style.display = "block";
+
             window.setTimeout(function () {
                 document.querySelector(".screenWrapper").style.opacity = "0.6";
                 document.body.style.overflow = "hidden";
