@@ -113,6 +113,60 @@ li {
   display: flex;
   /* width: 100%; */
 }
+.mainWavingHand {
+  width: 2.5rem;
+  height: 2.5rem;
+  object-fit: contain;
+}
+.mainWavingHand img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  animation-name: wave-animation;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  transform-origin: 70% 70%;
+  display: inline-block;
+  transition: all 0.2s ease;
+}
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  5% {
+    transform: rotate(-5deg);
+  }
+  10% {
+    transform: rotate(10deg);
+  }
+  20% {
+    transform: rotate(-10deg);
+  }
+  30% {
+    transform: rotate(12deg);
+  }
+  40% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(12deg);
+  }
+  60% {
+    transform: rotate(-10deg);
+  }
+  70% {
+    transform: rotate(12deg);
+  }
+  80% {
+    transform: rotate(-10deg);
+  }
+  90% {
+    transform: rotate(9deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 .heroSection__Wrapper .hero .lower .lower_leftSide,
 .heroSection__Wrapper .hero .lower .lower_rightSide {
   width: 50%;
@@ -389,10 +443,11 @@ li {
   .heroSection__Wrapper {
     width: 100%;
     height: auto;
+    padding-top: 2rem;
   }
   .heroSection__Wrapper .hero {
     width: 100%;
-    margin-top: 3rem;
+    /* margin-top: 3rem; */
   }
   .navbar__Container {
     padding-left: 0.5rem;
@@ -468,6 +523,11 @@ li {
 }
 
 @media only screen and (min-width: 1200px) {
+  .mainWavingHand {
+    width: 3.5rem;
+    height: 3.5rem;
+    object-fit: contain;
+  }
   .heroSection__Wrapper .hero .lower {
     width: 100%;
     display: flex;
@@ -517,6 +577,11 @@ li {
   }
 }
 @media only screen and (min-width: 1700px) {
+  .mainWavingHand {
+    width: 5rem;
+    height: 5rem;
+    object-fit: contain;
+  }
   .heroSection__Wrapper .hero .lower {
     width: 100%;
     display: flex;
