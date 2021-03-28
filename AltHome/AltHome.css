@@ -81,20 +81,24 @@ li {
 }
 .heroSection__Wrapper {
   width: 100%;
-  height: calc(100% - 10rem);
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #e7e9e9;
+  margin-top: 3rem;
+  padding: 0px 3rem;
+  padding-top: 4rem;
 }
 .heroSection__Wrapper .hero {
-  width: 50rem;
+  width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   text-align: center;
-  margin-top: 8rem;
+  /* padding: 0px 2rem; */
 }
 .heroSection__Wrapper .hero .upper {
   display: flex;
@@ -107,6 +111,7 @@ li {
 }
 .heroSection__Wrapper .hero .lower {
   display: flex;
+  /* width: 100%; */
 }
 .heroSection__Wrapper .hero .lower .lower_leftSide,
 .heroSection__Wrapper .hero .lower .lower_rightSide {
@@ -129,7 +134,7 @@ li {
   object-fit: contain;
 }
 .heroSection__Wrapper .hero .lower .lower_rightSide .heroListItem {
-  width: 20.5rem;
+  width: 80%rem;
   display: flex;
   margin-left: 1.75rem;
 }
@@ -321,7 +326,65 @@ li {
   height: 100%;
   display: none;
 }
-
+@media only screen and (max-device-width: 480px) {
+  .navItem {
+    display: none;
+  }
+  .mobileMenuIcon {
+    width: 3rem;
+    height: 1.5rem;
+    display: block;
+  }
+  .mobileMenuIcon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .mobileMenu {
+    display: block;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    position: fixed;
+    bottom: -100px;
+    left: 0;
+    transition: all 0.3s ease;
+  }
+  .mobileMenu .menuItems {
+    height: 100%;
+    width: 100%;
+  }
+  .mobileMenu .menuItems .mobile_menuItem {
+    height: 2.75rem;
+    border-bottom: 1px solid #e4e3e2;
+    display: flex;
+    align-items: center;
+    padding-left: 0.75rem;
+  }
+  .mobileMenu .menuItems .mobile_menuItem .iconContainer {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .mobileMenu .menuItems .mobile_menuItem .iconContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .mobileMenu .menuItems .mobile_menuItem a {
+    text-decoration: none;
+    color: #37352f;
+    padding-left: 0.25rem;
+  }
+  .screenWrapper {
+    display: none;
+    background-color: black;
+    position: fixed;
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease;
+  }
+}
 @media only screen and (max-width: 600px) {
   .heroSection__Wrapper {
     width: 100%;
@@ -334,6 +397,12 @@ li {
   .navbar__Container {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+  }
+  .heroSection__Wrapper {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .heroSection__Wrapper .hero {
   }
   .heroSection__Wrapper .hero .upper,
   .heroSection__Wrapper .hero .lower {
@@ -398,63 +467,101 @@ li {
   }
 }
 
-@media only screen and (max-device-width: 480px) {
-  .navItem {
-    display: none;
-  }
-
-  .mobileMenuIcon {
-    width: 3rem;
-    height: 1.5rem;
-    display: block;
-  }
-  .mobileMenuIcon img {
+@media only screen and (min-width: 1200px) {
+  .heroSection__Wrapper .hero .lower {
     width: 100%;
-    height: 100%;
-    object-fit: contain;
-  }
-  .mobileMenu {
-    display: block;
-    width: 100%;
-    height: auto;
-    background-color: white;
-    position: fixed;
-    bottom: -100px;
-    left: 0;
-    transition: all 0.3s ease;
-  }
-  .mobileMenu .menuItems {
-    height: 100%;
-    width: 100%;
-  }
-  .mobileMenu .menuItems .mobile_menuItem {
-    height: 2.75rem;
-    border-bottom: 1px solid #e4e3e2;
     display: flex;
-    align-items: center;
-    padding-left: 0.75rem;
   }
-  .mobileMenu .menuItems .mobile_menuItem .iconContainer {
+  .heroSection__Wrapper .hero .upper {
+    width: 70%;
+  }
+  .heroSection__Wrapper .hero .upper .mainHead {
+    width: 100%;
+  }
+  .heroSection__Wrapper .hero .upper span {
+    width: 100%;
+    font-size: 4.5rem !important;
+  }
+  .secondaryHead {
+    font-size: 1.75rem;
+  }
+  .heroSection__Wrapper .hero .lower .lower_rightSide .heroListItem {
+    width: 85%;
+  }
+  .heroSection__Wrapper
+    .hero
+    .lower
+    .lower_rightSide
+    .heroListItem
+    .imgContainer {
     width: 1.5rem;
     height: 1.5rem;
   }
-  .mobileMenu .menuItems .mobile_menuItem .iconContainer img {
+  .heroSection__Wrapper
+    .hero
+    .lower
+    .lower_rightSide
+    .heroListItem
+    .imgContainer
+    img {
+    margin-top: -1rem;
+  }
+  .heroSection__Wrapper .hero .lower .lower_rightSide .heroListItem p {
+    font-size: 1.5rem;
+  }
+  .hero_CTABtn {
+    width: 13rem;
+    height: 4rem;
+    font-size: 1.25rem;
+    margin-top: 1.5rem;
+  }
+}
+@media only screen and (min-width: 1700px) {
+  .heroSection__Wrapper .hero .lower {
     width: 100%;
-    height: 100%;
-    object-fit: contain;
+    display: flex;
   }
-  .mobileMenu .menuItems .mobile_menuItem a {
-    text-decoration: none;
-    color: #37352f;
-    padding-left: 0.25rem;
+  .heroSection__Wrapper .hero .upper {
+    width: 85% !important;
   }
-  .screenWrapper {
-    display: none;
-    background-color: black;
-    position: fixed;
-    opacity: 0.6;
-    top: 0;
-    left: 0;
-    transition: all 0.3s ease;
+  .heroSection__Wrapper .hero .upper .mainHead {
+    width: 100%;
+  }
+  .heroSection__Wrapper .hero .upper span {
+    width: 100%;
+    font-size: 6rem !important;
+  }
+  .secondaryHead {
+    font-size: 2rem !important;
+  }
+  .heroSection__Wrapper .hero .lower .lower_rightSide .heroListItem {
+    width: 85%;
+  }
+  .heroSection__Wrapper
+    .hero
+    .lower
+    .lower_rightSide
+    .heroListItem
+    .imgContainer {
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+  .heroSection__Wrapper
+    .hero
+    .lower
+    .lower_rightSide
+    .heroListItem
+    .imgContainer
+    img {
+    margin: 0rem !important;
+  }
+  .heroSection__Wrapper .hero .lower .lower_rightSide .heroListItem p {
+    font-size: 2.25rem !important;
+  }
+  .hero_CTABtn {
+    width: 18rem !important;
+    height: 5.5rem !important;
+    font-size: 1.9rem !important;
+    margin-top: 2rem !important;
   }
 }
