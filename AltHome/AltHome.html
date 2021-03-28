@@ -23,30 +23,47 @@
                 <!-- <span>Clubhouse</span> -->
             </div>
             <ul class="navItems__Container">
-                <!-- <li class="navItem">
+                <li class="navItem">
                     Sign In
                 </li>
                 <li class="navItem">
                     Get early access
-                </li> -->
+                </li>
                 <li id="mobileMenuBtn" class="mobileMenuIcon">
                     <div class="imgContainer">
                         <img src="../assets/images/two-lines.png" alt="menu Icon" />
                     </div>
 
-                    <p>MENU</p>
+                    <!-- <p>MENU</p> -->
                 </li>
             </ul>
         </div>
-        <div class="screenWrapper">
+        <!-- <div class="screenWrapper">
 
-        </div>
+        </div> -->
         <div class="mobileMenu">
+            <div class="upperSection">
+                <div class="logoImgContainer">
+                    <img src="../assets/images/fam.png" alt="famIcon" />
+                </div>
+                <div id="crossIcon" class="crossIcon">
+                    <img src="https://assets.website-files.com/6041800c9ce7dbad3a32342b/6041800c9ce7dbd3c03234cb_Close.svg"
+                        alt="crossIcon" />
+                </div>
+            </div>
             <ul class="menuItems">
-                <li class="mobile_menuItem">
+                <!-- <li class="mobile_menuItem">
                     <div class="iconContainer">
-                        <img src="../assets/images/login.png" alt="loginIcon" />
+                        <img src="../assets/images/fam.png" alt="famIcon" />
                     </div>
+                    <a href="#">
+                        Sign in
+                    </a> 
+                </li> -->
+                <li class="mobile_menuItem">
+                    <!-- <div class="iconContainer">
+                        <img src="../assets/images/login.png" alt="loginIcon" />
+                    </div> -->
                     <a href="#">
                         Sign in
                     </a>
@@ -226,22 +243,19 @@
 
     <script>
         document.getElementById("mobileMenuBtn").addEventListener("click", function () {
-            document.querySelector(".mobileMenu").style.bottom = "0%";
-            document.querySelector(".screenWrapper").style.display = "block";
-
+            console.log("CLICKED")
+            document.querySelector(".mobileMenu").style.display = "block";
             window.setTimeout(function () {
-                document.querySelector(".screenWrapper").style.opacity = "0.6";
+                document.querySelector(".mobileMenu").style.opacity = "1";
                 document.body.style.overflow = "hidden";
             }, 100)
-            document.querySelector(".screenWrapper").addEventListener("click", function () {
-                document.querySelector(".mobileMenu").style.transition = "all 0.3s ease";
-                document.querySelector(".screenWrapper").style.transition = "all 0.3s ease";
-                document.querySelector(".mobileMenu").style.bottom = "-100px";
-                document.querySelector(".screenWrapper").style.opacity = "0";
+            document.getElementById("crossIcon").addEventListener("click", function () {
+                document.querySelector(".mobileMenu").style.transition = "all 0.5s ease";
+                document.querySelector(".mobileMenu").style.opacity = "0";
                 window.setTimeout(function () {
-                    document.querySelector(".screenWrapper").style.display = "none";
+                    document.querySelector(".mobileMenu").style.display = "none";
                     document.body.style.overflow = "auto";
-                }, 100)
+                }, 500)
             });
         })
         var acc = document.getElementsByClassName("accordion");
