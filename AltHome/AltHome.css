@@ -684,6 +684,9 @@ li {
   .heroSection__Wrapper .hero .lower .lower_rightSide {
     justify-content: flex-end;
   }
+  .heroSection__Wrapper .hero .lower .lower_rightSide {
+    justify-content: center;
+  }
   .heroSection__Wrapper .hero .lower .lower_leftSide .imgContainer {
     width: 85%;
     height: 85%;
