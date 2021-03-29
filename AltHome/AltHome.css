@@ -354,6 +354,7 @@ li {
   display: flex;
   justify-content: center;
   margin-top: 8rem;
+  background-color: white;
 }
 .footer .footerContent__Container {
   width: 22rem;
@@ -595,7 +596,6 @@ li {
   }
   .footer {
     margin-top: 2rem;
-    background-color: white;
   }
 }
 
